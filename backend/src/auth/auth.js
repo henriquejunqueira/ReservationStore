@@ -67,6 +67,7 @@ authRouter.post('/signup', async (req, res) => {
   }
 
   const salt = crypto.randomBytes(16);
+
   crypto.pbkdf2(
     req.body.password,
     salt,
@@ -131,7 +132,7 @@ authRouter.post('/login', (req, res) => {
         success: false,
         statusCode: 400,
         body: {
-          text: 'User not found',
+          text: 'Credentials are not correct',
         },
       });
     }
