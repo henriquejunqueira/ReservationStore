@@ -20,7 +20,7 @@ usersRouter.delete('/:id', async (req, res) => {
 });
 
 usersRouter.put('/:id', async (req, res) => {
-  const { success, statusCode, body } = await usersControllers.updateuser(
+  const { success, statusCode, body } = await usersControllers.updateUser(
     req.params.id,
     req.body
   );

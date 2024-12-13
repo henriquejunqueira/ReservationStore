@@ -25,7 +25,8 @@ export default class UsersControllers {
       return serverError(error);
     }
   }
-  async updateuser(userId, userData) {
+
+  async updateUser(userId, userData) {
     try {
       const result = await this.dataAccess.updateUser(userId, userData);
 
