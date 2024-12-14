@@ -35,7 +35,7 @@
 
 - `npm run dev`
 
-### Instalando biblioteca de componentes:
+### Instalando biblioteca Material UI (Mui) de componentes:
 
 - `$ npm install @mui/material @emotion/react @emotion/styled`
 
