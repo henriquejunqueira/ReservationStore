@@ -12,3 +12,25 @@
 - `$ npm init -y`
 - `$ npm install -D nodemon`
 - `$ npm install express cors mongodb passport passport-local crypto jsonwebtoken dotenv`
+
+### Rodando o servidor backend:
+
+- `npm run dev`
+
+### Comandos utilizados:
+
+- Utilizado React + Vite
+
+#### Criando projeto no frontend:
+
+- `$ npm create vite@latest frontend`
+- `✔ Select a framework: › React`
+
+### Entrando na pasta do projeto e instalando dependências do package.json:
+
+- `cd frontend`
+- `npm install`
+
+### Rodando o projeto no frontend:
+
+- `npm run dev`
