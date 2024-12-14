@@ -42,3 +42,7 @@
 ### Instalando biblioteca de icones:
 
 - `$ npm install react-icons`
+
+### Instalando biblioteca de rotas:
+
+- `$ npm install react-router-dom`
