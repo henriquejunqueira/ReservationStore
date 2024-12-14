@@ -34,3 +34,11 @@
 ### Rodando o projeto no frontend:
 
 - `npm run dev`
+
+### Instalando biblioteca de componentes:
+
+- `$ npm install @mui/material @emotion/react @emotion/styled`
+
+### Instalando biblioteca de icones:
+
+- `$ npm install react-icons`

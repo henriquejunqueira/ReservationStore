@@ -1,0 +1,79 @@
+:root {
+  --red: #d32f2f;
+  --orange: #ff5722;
+  --yellow: #ffeb3b;
+  --green: #388e3c;
+  --bege: #d7ccc8;
+}
+/* Container dos menus */
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--green);
+  height: 96px;
+}
+
+.logo {
+  width: 5em;
+}
+
+/* Menu desktop e tablet */
+.navbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbarLink {
+  color: var(--bege);
+}
+
+.navbarLinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+/* Menu mobile */
+.mobileNavbarItems {
+  display: none;
+}
+
+.mobileNavbarBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: xx-large;
+  padding: 0.5em;
+}
+
+/* Define que o menu mobile aparece em dispositivos com largura máxima de até 600px */
+@media screen and (max-width: 600px) {
+  .navbarItems {
+    display: none;
+  }
+
+  .mobileNavbarItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* Menu drawer do mobile */
+.drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2em;
+  gap: 1em;
+  background-color: #388e3c;
+  font-size: xx-large;
+}
