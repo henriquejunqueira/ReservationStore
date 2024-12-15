@@ -1,5 +1,5 @@
 import styles from './navbar.module.css';
-import { FaShoppingCart, FaUserCircle, FaBars } from 'react-icons/fa';
+import { LuShoppingCart, LuCircleUser, LuMenu } from 'react-icons/lu';
 import { Drawer } from '@mui/material';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -26,10 +26,10 @@ export default function Navbar() {
             Plates
           </Link>
           <Link to={'/cart'}>
-            <FaShoppingCart className={styles.navbarLink} />
+            <LuShoppingCart className={styles.navbarLink} />
           </Link>
           <Link to={'/profile'}>
-            <FaUserCircle className={styles.navbarLink} />
+            <LuCircleUser className={styles.navbarLink} />
           </Link>
         </div>
       </div>
@@ -41,9 +41,9 @@ export default function Navbar() {
         </Link>
         <div className={styles.mobileNavbarBtns}>
           <Link to={'/cart'}>
-            <FaShoppingCart className={styles.navbarLink} />
+            <LuShoppingCart className={styles.navbarLink} />
           </Link>
-          <FaBars className={styles.navbarLink} onClick={handleOpenMenu} />
+          <LuMenu className={styles.navbarLink} onClick={handleOpenMenu} />
         </div>
       </div>
 

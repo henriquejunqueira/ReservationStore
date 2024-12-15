@@ -29,6 +29,12 @@
 
 .navbarLink {
   color: var(--bege);
+  transition: transform 0.3s ease;
+}
+
+.navbarLink:hover {
+  /* border-bottom: 2px solid var(--red); */
+  transform: scale(1.1);
 }
 
 .navbarLinksContainer {

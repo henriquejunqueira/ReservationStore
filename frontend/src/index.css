@@ -4,19 +4,33 @@
   --yellow: #ffeb3b;
   --green: #388e3c;
   --bege: #d7ccc8;
+  --black: #222222;
 }
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Nunito';
 }
 
 #root {
   font-size: x-large;
+  background-color: var(--bege);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 button {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   background-color: var(--red);
   color: var(--bege);
@@ -24,4 +38,16 @@ button {
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
+  font-size: medium;
+
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+p {
+  display: flex;
+  gap: 0.2em;
 }
