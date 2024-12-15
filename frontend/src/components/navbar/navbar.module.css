@@ -4,6 +4,7 @@
   --yellow: #ffeb3b;
   --green: #388e3c;
   --bege: #d7ccc8;
+  --black: #222222;
 }
 /* Container dos menus */
 .navbarContainer {
@@ -29,12 +30,10 @@
 
 .navbarLink {
   color: var(--bege);
-  transition: transform 0.3s ease;
 }
 
 .navbarLink:hover {
-  /* border-bottom: 2px solid var(--red); */
-  transform: scale(1.1);
+  box-shadow: 0px 2px 0px var(--bege);
 }
 
 .navbarLinksContainer {
