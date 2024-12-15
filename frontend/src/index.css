@@ -15,3 +15,13 @@
 #root {
   font-size: x-large;
 }
+
+button {
+  width: fit-content;
+  background-color: var(--red);
+  color: var(--bege);
+  border: none;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}

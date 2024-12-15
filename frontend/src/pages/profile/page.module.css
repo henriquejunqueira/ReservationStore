@@ -1,0 +1,27 @@
+:root {
+  --red: #d32f2f;
+  --orange: #ff5722;
+  --yellow: #ffeb3b;
+  --green: #388e3c;
+  --bege: #d7ccc8;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.ordersContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.orderContainer {
+  background-color: var(--green);
+  color: var(--bege);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
