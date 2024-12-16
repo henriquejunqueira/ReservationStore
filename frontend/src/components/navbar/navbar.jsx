@@ -50,13 +50,21 @@ export default function Navbar() {
       {/* Menu drawer */}
       <Drawer anchor='right' open={openMenu} onClose={handleOpenMenu}>
         <div className={styles.drawer}>
-          <Link to={'/'} className={styles.navbarLink}>
+          <Link to={'/'} className={styles.navbarLink} onClick={handleOpenMenu}>
             Home
           </Link>
-          <Link to={'/plates'} className={styles.navbarLink}>
+          <Link
+            to={'/plates'}
+            className={styles.navbarLink}
+            onClick={handleOpenMenu}
+          >
             Plates
           </Link>
-          <Link to={'/profile'} className={styles.navbarLink}>
+          <Link
+            to={'/profile'}
+            className={styles.navbarLink}
+            onClick={handleOpenMenu}
+          >
             Profile
           </Link>
         </div>

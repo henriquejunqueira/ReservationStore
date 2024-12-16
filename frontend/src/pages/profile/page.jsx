@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import authServices from '../../services/auth';
 import orderServices from '../../services/order';
 import styles from './page.module.css';
@@ -76,7 +76,12 @@ export default function Profile() {
           ))}
         </div>
       ) : (
-        <div>You do not have orders yet</div>
+        <div>
+          You do not have orders yet.{' '}
+          <Link to={'/plates'} className={styles.platesLink}>
+            Click here and see our specialities!
+          </Link>
+        </div>
       )}
     </div>
   );

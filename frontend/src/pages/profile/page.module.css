@@ -33,7 +33,6 @@
 
 .pickupStatus {
   border-radius: 0.5em;
-  /* color: var(--black); */
   width: fit-content;
   padding: 0.2em;
   font-size: medium;
@@ -49,6 +48,15 @@
 
 .canceled {
   background-color: var(--red);
+}
+
+.platesLink {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.platesLink:hover {
+  color: var(--green);
 }
 
 @media screen and (max-width: 800px) {

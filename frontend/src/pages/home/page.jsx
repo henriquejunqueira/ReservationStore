@@ -59,8 +59,8 @@ export default function Home() {
         <h1>Stay Updated!</h1>
         <p>
           Enter the world of Reservation Store by following us on social media.
-          You'll always be updated on our culinary creations, special events,
-          and gourmet surprises. Don't miss out on a single bite!
+          You&#39;ll always be updated on our culinary creations, special
+          events, and gourmet surprises. Don&#39;t miss out on a single bite!
         </p>
         <div className={styles.socialButtonsContainer}>
           <button className={styles.socialButton}>
