@@ -1,0 +1,32 @@
+:root {
+  --red: #d32f2f;
+  --orange: #ff5722;
+  --yellow: #ffeb3b;
+  --green: #388e3c;
+  --darkGreen: #2a9d8f;
+  --bege: #d7ccc8;
+  --black: #222222;
+  --gray: #777777;
+}
+
+.popupContainer {
+  background-color: var(--bege);
+  color: var(--black);
+}
+
+.popupContainer img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.ingredients {
+  color: var(--gray);
+}
