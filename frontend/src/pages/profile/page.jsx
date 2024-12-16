@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import authServices from '../../services/auth';
 import orderServices from '../../services/order';
@@ -9,6 +9,7 @@ import {
   LuCircleAlert,
   LuCircleCheckBig,
 } from 'react-icons/lu';
+import Loading from '../loading/page';
 
 export default function Profile() {
   const { logout } = authServices();
@@ -17,16 +18,24 @@ export default function Profile() {
   const navigate = useNavigate();
   const authData = JSON.parse(localStorage.getItem('auth'));
 
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     if (!authData) {
       navigate('/auth');
     } else if (refetchOrders) {
       getUserOrders(authData?.user?._id);
     }
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, [authData, refetchOrders, navigate, getUserOrders]);
 
-  if (orderLoading) {
-    return <h1>Loading...</h1>;
+  if (isLoading || orderLoading) {
+    return <Loading />;
   }
 
   const handleLogout = () => {

@@ -1,0 +1,21 @@
+:root {
+  --red: #d32f2f;
+  --orange: #ff5722;
+  --yellow: #ffeb3b;
+  --green: #388e3c;
+  --darkGreen: #2a9d8f;
+  --bege: #d7ccc8;
+  --black: #222222;
+}
+
+.loadingPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loadingPageContainer p {
+  color: var(--green);
+}
