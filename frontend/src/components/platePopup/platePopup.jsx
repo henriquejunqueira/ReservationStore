@@ -1,7 +1,8 @@
 import { Dialog } from '@mui/material';
 import styles from './platePopup.module.css';
+import { BsCartPlus } from 'react-icons/bs';
 
-export default function PlatePopup({ plateData, onClose }) {
+export default function PlatePopup({ plateData, onClose, onAddToCart }) {
   return (
     <Dialog open={true} onClose={onClose}>
       <div className={styles.popupContainer}>
@@ -13,7 +14,14 @@ export default function PlatePopup({ plateData, onClose }) {
           </p>
           <p>{plateData.description}</p>
           <h2>$ {plateData.price}</h2>
-          <button>Add to cart</button>
+          <button
+            onClick={() => {
+              onAddToCart(plateData);
+            }}
+          >
+            <BsCartPlus />
+            Add to cart
+          </button>
         </div>
       </div>
     </Dialog>
