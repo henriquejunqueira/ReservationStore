@@ -1,0 +1,32 @@
+:root {
+  --red: #d32f2f;
+  --orange: #ff5722;
+  --yellow: #ffeb3b;
+  --green: #388e3c;
+  --darkGreen: #2a9d8f;
+  --bege: #d7ccc8;
+  --black: #222222;
+  --gray: #777777;
+}
+
+.popupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background-color: var(--bege);
+  color: var(--black);
+}
+
+.popupContentText h2,
+.popupContentText p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmBtns {
+  display: flex;
+  gap: 0.5em;
+}
