@@ -46,3 +46,11 @@
 ### Instalando biblioteca de rotas:
 
 - `$ npm install react-router-dom`
+
+### Gerando imagem docker do backend:
+
+- `$ docker build -t backend .`
+
+### Rodando container no terminal:
+
+- `$ docker run -p 3000:3000 backend`
